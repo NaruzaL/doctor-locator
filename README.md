@@ -11,9 +11,8 @@ This web application will allow a user to call upon an API for (project aim goes
 
 |Behavior| Input (User Action/Selection) |Output|
 |---|:---:|:---:|
-| | | |
-| | | |
-| | | |
+|User can seach for doctors to treat their issue | user input: "headache" | "Harry Reahl, MD" "Address:9427 SW Barnes Rd, Portland, 97225" "Phone:5035551150" |
+
 
 ## Setup/Installation Requirements
 
