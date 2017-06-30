@@ -7,7 +7,7 @@
 
 ## Description
 
-This web application will allow a user to call upon an API for (project aim goes here example: search a film API for information about a film).
+This web application will allow a user to call upon an API to search for a doctor to treat their symptoms.
 
 |Behavior| Input (User Action/Selection) |Output|
 |---|:---:|:---:|
@@ -29,6 +29,10 @@ To download and run this project:
 ## Support and contact details
 
 If you have any issues or have questions, ideas, concerns, or contributions please contact me through through Github.
+
+## Known Bugs
+
+Because of the double for loop in the getDoctors prototype the program gets several duplicate entries. The API just seems to contain duplicates. Method for filtering the allDoctors array is needed.
 
 ## Technologies Used
 
