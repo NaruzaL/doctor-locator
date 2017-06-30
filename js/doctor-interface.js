@@ -2,7 +2,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctors = function(allDoctors){
   allDoctors.forEach(function(doctor){
-    $('#responses').append('<p>' + doctor.name + '</p>');
+    $('#responses').append('<p><strong>' + doctor.name + '</strong></p>');
     $('#responses').append('<p>' + "Address:" + doctor.address + '</p>');
     $('#responses').append('<p>' + "Phone:" + doctor.phone + '</p><br>');
   });
@@ -11,8 +11,10 @@ var displayDoctors = function(allDoctors){
 
 $(document).ready(function(){
   var doctorObject = new Doctor();
+  $('#responses').hide();
   $("form#symptom").submit(function(event){
     event.preventDefault();
+    $('#responses').show();
     $('#responses').empty();
     var medicalIssue = $("#medicalIssue").val();
     doctorObject.getDoctors(medicalIssue, displayDoctors);
